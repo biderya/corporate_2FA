@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from "next/link";
 
 import ReactInputVerificationCode from "react-input-verification-code";
 
@@ -26,11 +27,13 @@ const Auth = () => {
           </div>
 
           <div className="text-center">
-            <button
-              className={` bg-[#33363b] mb-7 p-3 w-80 text-white rounded-lg hover:shadow-xl`}
-            >
-              Баталгаажуулах
-            </button>
+            <Link href="/2fa" passHref>
+              <button
+                className={` bg-[#33363b] mb-7 p-3 w-80 text-white rounded-lg hover:shadow-xl`}
+              >
+                Баталгаажуулах
+              </button>
+            </Link>
 
             <p className="text-[#22cda8]">Өөр аргаар баталгаажуулах</p>
           </div>
